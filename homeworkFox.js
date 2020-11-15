@@ -37,7 +37,7 @@ describe('Find 🦊',()=>{
     liska.waitForDisplayed({ timeout: 10000, interval: 30 })
     liska.click()
 
-    saveScreenshot('listicka.png')
+    saveScreenshot('listicka')
     
     expect(liska).toBeDisplayed()
     browser.pause(20000)
