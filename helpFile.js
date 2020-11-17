@@ -132,12 +132,13 @@ let addingPage = {
             browser.pause(500)
         }
 
-//rychle page info
+//rychle page info a h1
         const showPageInfo = () => {
           console.log('========PAGE INFO=======')
           console.log('URL: ' + browser.getUrl())
           console.log('Title: ' + browser.getTitle())
-          
+          console.log('Header of page (H1) ' + browser.$('h1'))
+            
       }
       module.exports = {showPageInfo}
 
