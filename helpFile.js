@@ -132,6 +132,7 @@ let addingPage = {
             browser.pause(500)
         }
 
+//rychle page info
         const showPageInfo = () => {
           console.log('========PAGE INFO=======')
           console.log('URL: ' + browser.getUrl())
