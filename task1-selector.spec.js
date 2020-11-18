@@ -6,12 +6,6 @@ describe('Page selectors', () => {
     })
     it('10x clicking on button "Dej like!" increases value in blue rectangle to 10', () => {
 
-       // let giveLikeButton = browser.$('#like-button')      // najdi tlacitko "Dej like!" na konci pohadky
-        //let likeCounter = browser.$('#lvlAwesome')          // najdi pocitadlo pod pohadkou
-       
-
-
-        //scrollIntoView zname - scrollni dolu, at vidis, co se deje
         addingPage.likeCounter.scrollIntoView()
         for (let i = 0; i < 10; i = i + 1) {
             // element, ktery jsme nasli na radku 12 a ted na nej klikame
