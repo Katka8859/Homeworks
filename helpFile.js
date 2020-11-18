@@ -1,3 +1,5 @@
+//pomocný soubor pro Hackathon
+
 //https://webdriver.io/docs/api.html
 
 //sablona pro describe a it
