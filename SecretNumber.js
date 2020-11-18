@@ -15,12 +15,12 @@ const saveScreenshot = (name) => {
 }
 
 describe('Secret number', () => {
-  beforeEach(() => { //muzes zmenit na beforeEach, pokud je potreba
+  beforeEach(() => { 
     browser.url('https://automation.cervik.repl.co/inputs.html')
   })
 
   it('confirmation appears after validating correct secret number', () => {
-    // DOPLN
+    
     let secretNumber = browser.$('#secretPassword').getValue()
     browser.$('#secretNumberInput').setValue(secretNumber)
     browser.$('#checkSecretNumber').click()
@@ -31,7 +31,7 @@ describe('Secret number', () => {
 
 
   it('error appears after validating wrong secret number', () => {
-    // DOPLN
+   
     browser.$('#secretNumberInput').setValue('123myJsmeBratri')
     browser.$('#checkSecretNumber').click()
     let confirmation = browser.$('#passwordHelpBlock')
@@ -41,7 +41,7 @@ describe('Secret number', () => {
 
   
   it('error appears after validating empty secret number', () => {
-    // DOPLN
+    
     browser.$('#checkSecretNumber').click()
     let confirmation = browser.$('#passwordHelpBlock')
     expect(confirmation).toHaveText('Super secret je super špatně.')
